@@ -4,6 +4,18 @@ A small operations-research demo that assigns insurance claims to field adjuster
 
 The project uses **Google OR-Tools** for mixed-integer optimization and **Folium** for an interactive map. Notebook controls let you change storm severity, number of available adjusters, and the maximum total travel distance.
 
+## Demo
+
+![Storm claims adjuster optimization demo](assets/optimization_demo.png)
+
+## Key Features
+
+- Formulates claim-to-adjuster allocation as a binary mixed-integer optimization problem.
+- Minimizes total geographic assignment distance subject to adjuster capacity and system-wide distance constraints.
+- Generates synthetic storm scenarios with geographically concentrated claim demand.
+- Tracks operational KPIs including assignment distance, SLA compliance, and adjuster utilization.
+- Provides an interactive geographic decision-support visualization using Folium and ipywidgets.
+
 ## What the model does
 
 For each simulated claim, the optimization model selects exactly one adjuster.
